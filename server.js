@@ -14,7 +14,7 @@ app.use("/api/workouts", workoutsRouter);
 
 mongoose
   .connect(process.env.MONG_URL)
-  .then(() => {g
+  .then(() => {
     app.listen(PORT, () => {
       console.log(`server is running on port ${PORT}`);
     });
